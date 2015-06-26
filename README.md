@@ -1,5 +1,7 @@
 Ad example that targets IOS, but is ussable in most androids/windows-phones and in the browser, as it has a timeout to simulate a shake after 4 seconds.
 
+You can take a look at the demo in http://adtesting.co.nf
+
 This is a quick and simple code sample delivered to a customer in a real business scenario. As it is a primary key objective the performance there is no js transpilation neither library to maintain the code size at minimum. This kind of ad is served by an adServer in native apps webviews
 
 make sure you have installed node, npm and gulp
