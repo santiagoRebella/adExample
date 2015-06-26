@@ -1,0 +1,43 @@
+.icon {
+  background-image: url("../images/sprite.png");
+}
+.icon-m_c {
+  background-position: -0px -0px;
+  width: 88px;
+  height: 76px;
+}
+.icon-m_c_move {
+  background-position: -0px -76px;
+  width: 88px;
+  height: 76px;
+}
+.icon-m_v {
+  background-position: -0px -152px;
+  width: 88px;
+  height: 80px;
+}
+.icon-m_v_move {
+  background-position: -0px -232px;
+  width: 88px;
+  height: 80px;
+}
+.icon-m_f {
+  background-position: -0px -312px;
+  width: 88px;
+  height: 81px;
+}
+.icon-m_f_move {
+  background-position: -0px -393px;
+  width: 88px;
+  height: 81px;
+}
+.icon-m_rb {
+  background-position: -0px -474px;
+  width: 88px;
+  height: 86px;
+}
+.icon-m_rb_move {
+  background-position: -0px -560px;
+  width: 88px;
+  height: 86px;
+}

@@ -1,0 +1,80 @@
+@import "bourbon/bourbon";
+@import "extends";
+@import "animations";
+@import "mariposas";
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin:0;
+}
+%transition-opacity {
+  @include transition(opacity, 0.3s, ease-out);
+}
+
+#container {
+  position: relative;
+  overflow: hidden;
+  background-size: 100% 100%;
+  width: 320px;
+  height: 480px;
+  margin: 0 auto;
+  @include transition(background-image, 1.2s, ease-in-out);
+
+  &.first-background {
+    background-image: url('../assets/first_screen.jpg');
+  }
+  &.second-background {
+    background-image: url('../assets/transition_screen.jpg');
+  }
+  &.last-background {
+    background-image: url('../assets/last_screen.jpg');
+  }
+
+  .loader {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+    opacity:0;
+    text-align: center;
+    line-height: 480px;
+    color: white;
+
+    @extend %transition-opacity;
+
+  }
+
+  &.loading {
+    .loader {
+      opacity:1;
+      z-index: 100;
+    }
+  }
+}
+
+#instructions {
+  background-image: url('../assets/letrero.png');
+  width: 186px;
+  height:50px;
+  position: absolute;
+  bottom: 30px;
+  right: 5px;
+  opacity:1;
+
+  @extend %transition-opacity;
+
+  &.hidden {
+    opacity:0;
+  }
+}
+#hand {
+  background-image: url('../assets/shake-hand.png');
+  width: 48px;
+  height: 47px;
+  @include animation-name(shake-hand);
+  @extend %animation-duration-4s;
+  @extend %animation-timing-function-ease;
+  @include animation-iteration-count(infinite);
+}

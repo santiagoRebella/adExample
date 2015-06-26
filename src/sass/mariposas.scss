@@ -1,0 +1,298 @@
+.m {
+  position: absolute;
+  z-index: 1;
+  @include animation-iteration-count(infinite);
+  @extend %animation-timing-function-ease;
+  @include transition-property(transform);
+}
+.mc {
+  @include animation-name(standby-mc1);
+  width: 80px;
+  height: 68px;
+  background-image: url('../assets/m_c.png');
+  &.fly {
+    @include animation-name(fly-mc1);
+  }
+}
+
+.mv {
+  @include animation-name(standby-mv1);
+  width: 80px;
+  height: 72px;
+  background-image: url('../assets/m_v.png');
+  &.fly {
+    @include animation-name(fly-mv1);
+  }
+}
+
+.mf {
+  @include animation-name(standby-mf1);
+  width: 80px;
+  height: 73px;
+  background-image: url('../assets/m_f.png');
+  &.fly {
+    @include animation-name(fly-mf1);
+  }
+}
+
+.mrb {
+  @include animation-name(standby-mrb1);
+  width: 80px;
+  height: 78px;
+  background-image: url('../assets/m_rb.png');
+  &.fly {
+    @include animation-name(fly-mrb1);
+  }
+}
+
+// Mariposa celeste y blanca
+
+#mc1 {
+  top: 130px;
+  left: 175px;
+  @include transform(rotate(50deg));
+
+  @extend %animation-duration-4s;
+
+  @extend %transition-duration-2-8;
+  @extend %transition-timing-function-easy-out;
+
+  &.fly {
+    @extend %animation-duration-0-2s;
+    @include transform(rotate(30deg) translate3d(160px, -190px, 0));
+  }
+}
+
+#mc2 {
+  top: 30px;
+  left: 120px;
+  @include transform(rotate(20deg));
+
+  @extend %animation-duration-4-5s;
+
+  @extend %transition-duration-1-8;
+  @extend %transition-timing-function-linear;
+  @include transition-delay(0.4s);
+
+  &.fly {
+    @extend %animation-duration-0-2s;
+    @include transform(rotate(33deg) translate3d(0px, -180px, 0));
+  }
+}
+
+#mc3 {
+  top: 160px;
+  left: 95px;
+  @include transform(scale(0.9) rotate(70deg));
+
+  @extend %animation-duration-3-5s;
+
+  @extend %transition-duration-1-8;
+  @extend %transition-timing-function-easy-out;
+
+  &.fly {
+    @extend %animation-duration-0-2s;
+    @include transform(rotate(70deg) translate3d(0px, -250px, 0));
+  }
+}
+
+
+#mf1 {
+  top: 210px;
+  left: 160px;
+  @include transform(scale(0.7) rotate(-6deg));
+
+  @extend %animation-duration-3-5s;
+
+  @extend %transition-duration-1-8;
+  @extend %transition-timing-function-easy-out;
+  @extend %transition-delay-0-5;
+
+  &.fly {
+    @extend %animation-duration-0-2s;
+    @include transform(scale(0.7) rotate(-260deg) translate3d(-160px, -250px, 0));
+  }
+}
+#mf2 {
+  top: 190px;
+  left: 120px;
+  @include transform(scale(0.7) rotate(-126deg));
+
+  @include animation-duration(2.5s);
+  @include animation-timing-function(linear);
+
+  @extend %transition-duration-1-8;
+  @extend %transition-timing-function-linear;
+  @extend %transition-delay-0-5;
+
+  &.fly {
+    @extend %animation-duration-0-2s;
+    @include transform(scale(0.7) rotate(-100deg) translate3d(-60px, -390px, 0));
+  }
+}
+#mf3 {
+  top: 125px;
+  left: 135px;
+  @include transform(scale(0.7) rotate(-56deg));
+
+  @extend %animation-duration-2s;
+
+  @extend %transition-duration-1-8;
+  @extend %transition-timing-function-easy-out;
+  @extend %transition-delay-0-5;
+
+  &.fly {
+    @extend %animation-duration-0-1s;
+    @include transform(scale(0.7) rotate(-403deg) translate3d(-90px, -350px, 0));
+  }
+}
+
+#mv1 {
+  top: 240px;
+  left: 152px;
+  @include transform(rotate(13deg));
+
+  @extend %animation-duration-4s;
+
+  @extend %transition-duration-2-8;
+  @extend %transition-timing-function-linear;
+  @extend %transition-delay-0-1;
+
+  &.fly {
+    @include animation-duration(0.5s);
+    @include transform(rotate(45deg) translate3d(-60px, -290px, 0));
+  }
+}
+#mv2 {
+  top: 118px;
+  left: 102px;
+  @include transform(rotate(-23deg));
+
+  @extend %animation-duration-3-5s;
+
+  @extend %transition-duration-1-8;
+  @extend %transition-timing-function-ease-in;
+  @extend %transition-delay-0-5;
+
+  &.fly {
+    @extend %animation-duration-0-1s;
+    @include transform(rotate(-43deg) translate3d(-60px, -190px, 0));
+  }
+}
+#mv3 {
+  top: 200px;
+  left: 82px;
+  @include transform(scale(0.8) rotate(-73deg));
+
+  @extend %animation-duration-4-5s;
+
+  @extend %transition-duration-1-8;
+  @extend %transition-timing-function-linear;
+  @extend %transition-delay-0-5;
+
+  &.fly {
+    @extend %animation-duration-0-2s;
+    @include transform(rotate(-100deg) translate3d(-60px, -190px, 0));
+  }
+}
+
+
+#mrb1 {
+  top: 230px;
+  left: 102px;
+  @include transform(rotate(-53deg));
+
+  @extend %animation-duration-4-5s;
+
+  @extend %transition-duration-2-8;
+  @extend %transition-timing-function-ease-in;
+
+  &.fly {
+    @include animation-duration(0.3s);
+    @include transform(rotate(-53deg) translate3d(-60px, -190px, 0));
+  }
+}
+
+#mrb2 {
+  top: 170px;
+  left: 162px;
+  @include transform(rotate(-33deg));
+
+  @extend %animation-duration-4s;
+
+  @include transition-duration(2s);
+  @extend %transition-timing-function-linear;
+  @extend %transition-delay-0-1;
+
+  &.fly {
+    @extend %animation-duration-0-2s;
+    @include transform(rotate(-03deg) translate3d(-60px, -250px, 0));
+  }
+}
+#mrb3 {
+  top: 73px;
+  left: 140px;
+  @include transform(rotate(-30deg));
+
+  @extend %animation-duration-3-5s;
+
+  @include transition-duration(2.5s);
+  @extend %transition-timing-function-ease-in-out;
+  @include transition-delay(0.3s);
+
+  &.fly {
+    @extend %animation-duration-0-1s;
+    @include transform(rotate(-60deg) translate3d(-100px, -190px, 0));
+  }
+}
+
+// Final
+
+#mrb4_f {
+  top: 273px;
+  left: -85px;
+  @include transform(rotate(-30deg));
+
+  @extend %animation-duration-0-1s;
+  @include animation-name(fly-mrb1);
+
+  @include transition-duration(2.1s);
+  @extend %transition-timing-function-ease-in-out;
+  @include transition-delay(2s);
+
+  &.fly {
+    @include transform(scale(0.8) rotate(45deg) translate3d(-15px, -240px, 0));
+  }
+  &.standby {
+    @include animation-name(standby-mrb1);
+    @include transform(scale(0.8) rotate(45deg) translate3d(-15px, -240px, 0));
+    @extend %animation-duration-3-5s;
+
+  }
+}
+
+#mv4_f {
+  top: 485px;
+  right: -85px;
+  @include transform(scale(0.8) rotate(-45deg));
+  @include animation-name(standby-mv1);
+  @extend %animation-duration-3-5s;
+
+  @include transition-duration(3s);
+  @extend %transition-timing-function-linear;
+  @include transition-delay(1s);
+
+  &.fly {
+    @extend %animation-duration-0-1s;
+    @include animation-name(fly-mv1);
+
+    @include transform(scale(0.8) rotate(-45deg) translate3d(-20px, -447px, 0));
+  }
+  &.standby {
+    @include animation-name(standby-mv1);
+    @extend %animation-duration-4s;
+
+    @include transform(scale(0.8) rotate(-45deg) translate3d(-20px, -447px, 0));
+
+  }
+}

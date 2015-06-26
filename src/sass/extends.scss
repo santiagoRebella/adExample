@@ -1,0 +1,45 @@
+%transition-timing-function-easy-out {
+  @include transition-timing-function(ease-out);
+}
+%transition-timing-function-linear {
+  @include transition-timing-function(linear);
+}
+%transition-timing-function-ease-in {
+  @include transition-timing-function(ease-in);
+}
+%transition-timing-function-ease-in-out {
+  @include transition-timing-function(ease-in-out);
+}
+%animation-duration-0-1s {
+  @include animation-duration(0.1s);
+}
+%animation-duration-0-2s {
+  @include animation-duration(0.2s);
+}
+%animation-duration-2s {
+  @include animation-duration(2s);
+}
+%animation-duration-3-5s {
+  @include animation-duration(3.5s);
+}
+%animation-duration-4s {
+  @include animation-duration(4s);
+}
+%animation-duration-4-5s {
+  @include animation-duration(4.5s);
+}
+%transition-duration-1-8 {
+  @include transition-duration(1.8s);
+}
+%transition-delay-0-1 {
+  @include transition-delay(0.1s);
+}
+%transition-delay-0-5 {
+  @include transition-delay(0.5s);
+}
+%transition-duration-2-8 {
+  @include transition-duration(2.8s);
+}
+%animation-timing-function-ease {
+  @include animation-timing-function(ease);
+}

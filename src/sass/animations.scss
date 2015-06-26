@@ -1,0 +1,81 @@
+//Mariposa celeste y blanca
+
+@include keyframes(standby-mc1) {
+  0%   { background-image: url('../assets/m_c.png'); }
+  45%  { background-image: url('../assets/m_c.png'); }
+  50%  { background-image: url('../assets/m_c_move.png'); }
+  55%  { background-image: url('../assets/m_c.png'); }
+  100% { background-image: url('../assets/m_c.png'); }
+}
+
+@include keyframes(fly-mc1) {
+  0%   { background-image: url('../assets/m_c_move.png'); }
+  50%  { background-image: url('../assets/m_c.png'); }
+  100% { background-image: url('../assets/m_c_move.png'); }
+}
+
+//Mariposa fuxia
+@include keyframes(standby-mf1) {
+  0%  { background-image: url('../assets/m_f.png'); }
+  35% { background-image: url('../assets/m_f.png'); }
+  40% { background-image: url('../assets/m_f_move.png'); }
+  45% { background-image: url('../assets/m_f.png'); }
+  50% { background-image: url('../assets/m_f_move.png'); }
+  55% { background-image: url('../assets/m_f.png'); }
+  90% { background-image: url('../assets/m_f.png'); }
+}
+
+@include keyframes(fly-mf1) {
+  0%   { background-image: url('../assets/m_f_move.png'); }
+  50%  { background-image: url('../assets/m_f.png'); }
+  100% { background-image: url('../assets/m_f_move.png'); }
+}
+
+//Mariposa rosa y blanca
+@include keyframes(standby-mrb1) {
+  0%   { background-image: url('../assets/m_rb.png'); }
+  5%   { background-image: url('../assets/m_rb_move.png'); }
+  10%  { background-image: url('../assets/m_rb.png'); }
+  65%  { background-image: url('../assets/m_rb.png'); }
+  70%  { background-image: url('../assets/m_rb_move.png'); }
+  75%  { background-image: url('../assets/m_rb.png'); }
+  80%  { background-image: url('../assets/m_rb_move.png'); }
+  85%  { background-image: url('../assets/m_rb.png'); }
+  100% { background-image: url('../assets/m_rb.png'); }
+}
+
+@include keyframes(fly-mrb1) {
+  0%   { background-image: url('../assets/m_rb_move.png'); }
+  50%  { background-image: url('../assets/m_rb.png'); }
+  100% { background-image: url('../assets/m_rb_move.png'); }
+}
+
+//Mariposa violeta
+@include keyframes(standby-mv1) {
+  0%   { background-image: url('../assets/m_v.png'); }
+  5%   { background-image: url('../assets/m_v.png'); }
+  10%  { background-image: url('../assets/m_v_move.png'); }
+  12%  { background-image: url('../assets/m_v.png'); }
+  14%  { background-image: url('../assets/m_v_move.png'); }
+  16%  { background-image: url('../assets/m_v.png'); }
+  55%  { background-image: url('../assets/m_v.png'); }
+  100% { background-image: url('../assets/m_v.png'); }
+}
+
+@include keyframes(fly-mv1) {
+  0%   { background-image: url('../assets/m_v_move.png'); }
+  50%  { background-image: url('../assets/m_v.png'); }
+  100% { background-image: url('../assets/m_v_move.png'); }
+}
+
+//Shake hand
+@include keyframes(shake-hand) {
+  0%   { @include transform(rotate(0deg) ); }
+  35%  { @include transform(rotate(0deg) ); }
+  40%  { @include transform(rotate(15deg) ); }
+  45%  { @include transform(rotate(-15deg) ); }
+  50%  { @include transform(rotate(15deg) ); }
+  55%  { @include transform(rotate(-15deg) ); }
+  60%  { @include transform(rotate(0deg) ); }
+  100% { @include transform(rotate(0deg) ); }
+}
